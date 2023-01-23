@@ -1,6 +1,6 @@
 const APIKEY = 'abfbad389bf01bb271980502ad35707a';
 const imgpath='https://image.tmdb.org/t/p/'
-let curURL=`https:api.themoviedb.org/3/movie/popular?api_key=${APIKEY}&language=en-US&page=`
+let curURL=`https://api.themoviedb.org/3/movie/popular?api_key=${APIKEY}&language=en-US&page=`
 const getjson=async function(url){
     const res = await fetch(url);
     if(!res.ok) return "a"
@@ -126,10 +126,10 @@ window.onload=async function(){
   document.querySelector(".loader").classList.remove("hidden");
   document.querySelector(".wrapper-main").classList.add("hidden");
   displayPoster(
-    `https:api.themoviedb.org/3/movie/popular?api_key=${APIKEY}&language=en-US&page=1`
+    `https://api.themoviedb.org/3/movie/popular?api_key=${APIKEY}&language=en-US&page=1`
   );
   const data = await getjson(
-    `https:api.themoviedb.org/3/trending/movie/day?api_key=${APIKEY}&language=en-US`
+    `https://api.themoviedb.org/3/trending/movie/day?api_key=${APIKEY}&language=en-US`
   );
 
   document.querySelector(
