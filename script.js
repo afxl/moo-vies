@@ -129,7 +129,7 @@ window.onload=async function(){
     `https:api.themoviedb.org/3/movie/popular?api_key=${APIKEY}&language=en-US&page=1`
   );
   const data = await getjson(
-    `https://api.themoviedb.org/3/trending/movie/day?api_key=${APIKEY}&language=en-US`
+    `https:api.themoviedb.org/3/trending/movie/day?api_key=${APIKEY}&language=en-US`
   );
 
   document.querySelector(
