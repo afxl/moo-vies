@@ -154,9 +154,7 @@ img{
     font-size: 14px;
     margin-top:20px;
 }
-.overview::-webkit-scrollbar{
-    display: none;
-}
+
 .cardfoot ::-webkit-scrollbar {
     display: none;
 }
@@ -180,6 +178,12 @@ img{
     border-radius: 4px;
 }
 @media (max-width:441px) {
+    .search-bar{
+        flex-direction: column;
+    }
+    .search{
+        max-width: 70px;
+    }
     .card{
         width: auto;
         max-height: 100vw;
