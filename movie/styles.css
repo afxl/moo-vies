@@ -15,13 +15,15 @@ body{
 nav {
     width: 100%;
     overflow: hidden;
-    background-color: #cd0404;
     color: aliceblue;
-    box-shadow: 0 2px 4px rgba(64, 64, 64);
+    position: absolute;
+    z-index: 2000;
+    background: linear-gradient(rgba(19, 18, 18),transparent );
+    position: fixed;
 }
 .wrapper-main{
     width: 100%;
-    background-color: #575b76;
+    background-color: #464858;
     overflow-x: hidden;
 }
 .hide{
@@ -45,6 +47,7 @@ nav {
     height: 100%;
     z-index: 100;
     position: absolute;
+    margin: auto;
 }
 h2{
     color:goldenrod;
@@ -69,12 +72,21 @@ input{
     border-radius: 2px;
     border: 0;
     margin-bottom: 2px;
+    max-height: 40px;
 }
-
+nav h3{
+    font-size: 30px;
+    font-weight: 700;
+        background: -webkit-linear-gradient(goldenrod, rgb(232, 224, 224));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    border-radius: 5px;
+}
 .search {
     background-color: #332fd0;
     border-radius: 2px;
     border: 0;
+    height: 30px;
 }
 a{
     color: aliceblue;
@@ -125,15 +137,15 @@ img{
     height: 100%;
 }
 .image{
-    height: 220px;
+    min-height: 220px;
     width: 100%;
     overflow: hidden;
     position: relative;
     z-index: 1;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSW_cOpv69GlSNE6wNu0br79JbGnKKezsd1g&usqp=CAU");
 }
-.movie:hover{
-    filter: grayscale(1) opacity(0.9)
+.image:hover{
+    filter: blur(1px)
 }
 .hidden{
     display: none;
@@ -150,11 +162,18 @@ img{
     background-color: transparent;
     overflow-y:scroll;
     height: 70%;
-    color: white;
+    color:goldenrod;
     font-size: 14px;
+    font-weight: 500;
     margin-top:20px;
 }
-
+#headline{
+    background-color: #232437;
+    margin-bottom: 0;
+}
+.main{
+    box-shadow: 0 0px 10px rgb(85, 83, 83);
+}
 .cardfoot ::-webkit-scrollbar {
     display: none;
 }

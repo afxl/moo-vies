@@ -57,10 +57,11 @@ document.querySelector(".main").addEventListener("mouseover",e=>{
     if(!e.target.closest(".movie")){
       return
     }
-    e.target
-      .closest(".movie")
-      .querySelector(".overview")
-      .classList.remove("hidden");
+     e.target
+       .closest(".movie")
+       .querySelector(".image")
+       .style.filter="blur(0.5)"
+    e.target.closest(".movie").querySelector(".overview").classList.remove("hidden");
   })
 document.querySelector(".main").addEventListener("mouseout",e=>{
     if (!e.target.closest(".movie")) {
